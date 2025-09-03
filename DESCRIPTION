@@ -2,8 +2,8 @@ Package: MACCI
 Type: Package
 Title: Manage, Analyze, and Visualize Cell Culture Inventory
 Version: 0.3.0
-Author: Minseok Bryan Kim <dib24285@gmail.com>
-Maintainer: Minseok Bryan Kim <dib24285@gmail.com>
+Author: Minseok Bryan Kim <bbryankiim@gmail.com>
+Maintainer: Minseok Bryan Kim <bbryankiim@gmail.com>
 Description: A set of tools to help researchers manage a laboratory
     inventory of cell culture vials, visualize data, and perform
     data organization.
