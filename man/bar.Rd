@@ -2,20 +2,27 @@
 % Please edit documentation in R/visualization.R
 \name{bar}
 \alias{bar}
-\title{Create a Bar Chart from a Data Frame}
+\title{Create a Bar Chart}
 \usage{
 bar(data, category_col, value_col)
 }
 \arguments{
 \item{data}{A data frame containing the data to plot.}
 
-\item{category_col}{The name of the column to use for the categories (x-axis).}
+\item{category_col}{The name of the column for the x-axis categories.}
 
-\item{value_col}{The name of the column to use for the values (y-axis).}
+\item{value_col}{The name of the column for the y-axis values.}
 }
 \value{
 A ggplot object representing the bar chart.
 }
 \description{
-Creates a bar chart from a given data frame.
+Generates a bar chart from a data frame using ggplot2.
+}
+\examples{
+df <- data.frame(
+  Researcher = c("Alice", "Bob", "Charlie"),
+  VialsCreated = c(35, 52, 28)
+)
+bar(df, category_col = "Researcher", value_col = "VialsCreated")
 }

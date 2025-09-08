@@ -2,7 +2,7 @@
 % Please edit documentation in R/visualization.R
 \name{pie}
 \alias{pie}
-\title{Create a Pie Chart from a Data Frame}
+\title{Create a Pie Chart}
 \usage{
 pie(data, category_col, value_col)
 }
@@ -17,5 +17,12 @@ pie(data, category_col, value_col)
 A ggplot object representing the pie chart.
 }
 \description{
-Creates a pie chart from a given data frame.
+Generates a pie chart from a data frame using ggplot2.
+}
+\examples{
+df <- data.frame(
+  CellLine = c("MCF-7", "A549", "HeLa"),
+  VialCount = c(15, 22, 8)
+)
+pie(df, category_col = "CellLine", value_col = "VialCount")
 }

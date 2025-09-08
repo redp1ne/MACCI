@@ -7,13 +7,24 @@
 decreasing(data, sort_by_col)
 }
 \arguments{
-\item{data}{A data frame to sort.}
+\item{data}{The data frame to sort.}
 
-\item{sort_by_col}{The name of the column to sort by.}
+\item{sort_by_col}{A string specifying the name of the column to sort by.}
 }
 \value{
-A data frame sorted in decreasing order.
+A new data frame, sorted in decreasing order.
 }
 \description{
-Sorts a data frame in descending order based on a specified column.
+Sorts a data frame based on a specified column in descending order.
+}
+\examples{
+# Create a sample data frame
+df <- data.frame(
+  Item = c("Flasks", "Tips", "Serum"),
+  Quantity = c(50, 200, 12)
+)
+
+# Sort the data frame by 'Quantity' in descending order
+sorted_df <- decreasing(df, sort_by_col = "Quantity")
+print(sorted_df)
 }

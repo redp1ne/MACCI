@@ -7,13 +7,24 @@
 increasing(data, sort_by_col)
 }
 \arguments{
-\item{data}{A data frame to sort.}
+\item{data}{The data frame to sort.}
 
-\item{sort_by_col}{The name of the column to sort by.}
+\item{sort_by_col}{A string specifying the name of the column to sort by.}
 }
 \value{
-A data frame sorted in increasing order.
+A new data frame, sorted in increasing order.
 }
 \description{
-Sorts a data frame in ascending order based on a specified column.
+Sorts a data frame based on a specified column in ascending order.
+}
+\examples{
+# Create a sample data frame
+df <- data.frame(
+  Item = c("Flasks", "Tips", "Serum"),
+  Quantity = c(50, 200, 12)
+)
+
+# Sort the data frame by the 'Quantity' column
+sorted_df <- increasing(df, sort_by_col = "Quantity")
+print(sorted_df)
 }

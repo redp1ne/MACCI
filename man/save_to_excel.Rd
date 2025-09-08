@@ -4,16 +4,29 @@
 \alias{save_to_excel}
 \title{Save a Data Frame to an Excel File}
 \usage{
-save_to_excel(data, file_path)
+save_to_excel(data_to_save, output_path)
 }
 \arguments{
-\item{data}{The data frame to save.}
+\item{data_to_save}{The data frame that you want to save.}
 
-\item{file_path}{The path and name for the new Excel file (e.g., "sorted_data.xlsx").}
+\item{output_path}{A string specifying the full path and name for the output file
+(e.g., "/path/to/your/sorted_data.xlsx").}
 }
 \value{
-Invisibly returns the path to the new file.
+This function does not return a value. It saves a file to your computer.
 }
 \description{
 Writes a data frame to a new .xlsx file.
+}
+\examples{
+\dontrun{
+# Create a sample data frame
+df <- data.frame(ID = 1:5, Value = letters[1:5])
+
+# Define an output path (this will save to your temporary directory)
+file_location <- file.path(tempdir(), "my_data.xlsx")
+
+# Save the data
+save_to_excel(df, file_location)
+}
 }

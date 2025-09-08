@@ -2,7 +2,7 @@
 % Please edit documentation in R/visualization.R
 \name{scatter}
 \alias{scatter}
-\title{Create a Scatter Plot from a Data Frame}
+\title{Create a Scatter Plot}
 \usage{
 scatter(data, x_col, y_col)
 }
@@ -17,5 +17,12 @@ scatter(data, x_col, y_col)
 A ggplot object representing the scatter plot.
 }
 \description{
-Creates a scatter plot from a given data frame.
+Generates a scatter plot from a data frame using ggplot2.
+}
+\examples{
+df <- data.frame(
+  PassageNumber = c(5, 8, 12, 15),
+  Viability = c(99.0, 95.5, 92.1, 89.8)
+)
+scatter(df, x_col = "PassageNumber", y_col = "Viability")
 }

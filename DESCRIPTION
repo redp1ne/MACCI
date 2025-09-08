@@ -1,18 +1,25 @@
 Package: MACCI
 Type: Package
-Title: Manage, Analyze, and Visualize Cell Culture Inventory
-Version: 0.3.0
+Title: A Toolkit for Cell Culture Inventory Management
+Version: 1.0.0
 Author: Minseok Bryan Kim <dib24285@gmail.com>
 Maintainer: Minseok Bryan Kim <dib24285@gmail.com>
-Description: A set of tools to help researchers manage a laboratory
-    inventory of cell culture vials, visualize data, and perform
-    data organization.
-License: MIT
+Description: Provides a set of tools to help researchers manage and visualize
+ cell culture inventory data from spreadsheets. Includes functions for
+ generating common plots and sorting data frames for analysis.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    readxl,
-    ggplot2,
-    dplyr,
-    writexl
+Imports:
+  readxl,
+  ggplot2,
+  dplyr,
+  writexl
+URL: https://github.com/redp1ne/MACCI
+BugReports: https://github.com/redp1ne/MACCI/issues
 RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 3.5)
